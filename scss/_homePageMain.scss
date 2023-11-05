@@ -1,0 +1,100 @@
+.Main-section {
+	display: flex;
+
+	width: 100%;
+
+	justify-content: center;
+	&__wrap {
+		display: flex;
+
+		box-sizing: content-box;
+		margin: 0;
+
+		justify-content: space-between;
+		align-items: center;
+		.Main-block {
+			display: flex;
+			flex-direction: column;
+
+			width: 474px;
+
+			gap: 30px;
+			p {
+				width: 396.886px;
+			}
+			&__buttons {
+				display: flex;
+
+				gap: 21px;
+			}
+		}
+	}
+}
+.Skill-button {
+	position: relative;
+
+	display: flex;
+
+	height: 145px;
+
+	align-items: flex-end;
+	justify-content: center;
+	img {
+		position: absolute;
+		top: 0;
+	}
+	button {
+		display: flex;
+
+		min-width: 129px;
+		height: 112px;
+		padding: 14px 22px;
+
+		text-align: center;
+
+		border: none;
+		border-radius: 14px;
+
+		align-items: flex-end;
+		justify-content: center;
+	}
+}
+.Skill-button_Sprint {
+	button {
+		color: var(--primaty-pink-dark, #945069);
+		background: var(--primaty-pink-light, #f2d4dc);
+	}
+}
+.Skill-button_Sprint:hover {
+	button {
+		color: #975b71;
+		background: #f7e2e8;
+	}
+}
+.Skill-button_Audio-call {
+	button {
+		color: var(--primaty-cyan-dark, #2b788b);
+		background: var(--primaty-cyan-light, #c3dce3);
+	}
+}
+.Skill-button_Audio-call:hover {
+	button {
+		color: var(--primaty-cyan-dark, #42808f);
+		background: var(--primaty-cyan-light, #cfe0e5);
+	}
+}
+.Playful-way {
+	width: 1180px;
+	height: 600px;
+	padding: 0 5px 0 0;
+}
+.Vocabulary {
+	width: 1080px;
+	height: 474px;
+	padding: 26px 0 0 100px;
+}
+.Progress {
+	width: 1174px;
+	height: 409px;
+	padding: 95px 5px 95px 0;
+}

@@ -1,5 +1,5 @@
 header {
-	background: var(--primaty-grey-light, #f6f5f4);
+	overflow: hidden;
 }
 
 // ----navigation
@@ -108,8 +108,9 @@ header {
 
 		color: var(--primaty-cyan-dark, #2b788b);
 	}
-	&__button-block{
+	&__button-block {
 		display: flex;
+
 		gap: 30px;
 	}
 }

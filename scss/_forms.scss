@@ -29,9 +29,11 @@
 	background: #fff;
 }
 .About-platform {
-	text-align: center;
 	height: 44px;
 	padding: 14px 22px;
+
+	text-align: center;
+
 	color: #2b788b;
 	border: none;
 	border-radius: 100px;
@@ -46,4 +48,7 @@
 .Log-In_big,
 .About-platform_big {
 	height: 53px;
+}
+.primaty-grey-light {
+	background: var(--primaty-grey-light, #f6f5f4);
 }

@@ -1,0 +1,62 @@
+.textbook_dictionary {
+	flex-direction: row;
+
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.textbook-card_dictionary {
+	flex-direction: column;
+
+	width: 380px;
+	height: 652px;
+
+	.textbook-card__background {
+		width: 380px;
+		height: 250px;
+
+		border-radius: 14px 14px 0 0;
+	}
+	.textbook-card__container {
+		width: 320px;
+		padding: 30px;
+	}
+	.textbook-card__word {
+		display: flex;
+		flex-direction: column;
+
+		gap: 8px;
+		&_special {
+			color: #757575;
+		}
+	}
+	.textbook-card__description {
+		font-weight: 600;
+	}
+
+	.textbook-card__buttons {
+		display: flex;
+		flex-direction: column;
+
+		gap: 10px;
+	}
+	.textbook-card__button {
+		padding: 6px 20px;
+
+		align-self: flex-start;
+	}
+}
+
+.card-mark {
+	top: auto;
+	bottom: 40px;
+}
+
+.textbook-card_empty {
+	button {
+		width: 100%;
+		height: 100%;
+
+		border: none;
+		background-color: transparent;
+	}
+}

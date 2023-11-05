@@ -2,6 +2,7 @@
 @import 'forms';
 @import 'reset';
 @import 'header';
-body {
-	overflow: hidden;
-}
+@import 'homePageMain';
+@import 'textBookMain';
+@import 'dictionaryMain';
+@import 'footer';

@@ -1,0 +1,377 @@
+.textbook-main {
+	display: flex;
+	flex-direction: column;
+
+	padding: 40px 0 100px;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.textbook-header {
+	display: flex;
+
+	box-sizing: content-box;
+	width: 1140px;
+	height: 44px;
+	padding: 20px;
+
+	border-radius: 14px;
+	background: #fff;
+
+	justify-content: space-between;
+	align-items: center;
+	&__left,
+	&__right {
+		display: flex;
+	}
+	&__left {
+		h2:nth-of-type(n + 2) {
+			margin-left: 20px;
+			padding-left: 20px;
+
+			border-left: 1px solid #e0e0e0;
+		}
+	}
+	&__right {
+		gap: 10px;
+	}
+}
+
+.textbook-caption,
+.dictionary-caption {
+	display: flex;
+
+	color: #757575;
+
+	align-items: center;
+	gap: 10px;
+}
+.textbook-caption_selected,
+.dictionary-caption_selected,
+.textbook-caption:hover,
+.dictionary-caption:hover {
+	color: #000;
+}
+.textbook-caption:before {
+	content: url(../svg/textbook/fluent_hat-graduation-24-filled.svg);
+}
+.dictionary-caption:before {
+	content: url(../svg/textbook/ion_book.svg);
+}
+.textbook-caption:hover:before,
+.textbook-caption_selected:before {
+	content: url(../svg/textbook/fluent_hat-graduation-24-filled_selected.svg);
+}
+.dictionary-caption:hover:before,
+.dictionary-caption_selected:before {
+	content: url(../svg/textbook/ion_book_selected.svg);
+}
+
+.Skill-button-background {
+	position: relative;
+
+	display: flex;
+
+	height: 44px;
+
+	border: none;
+	border-radius: 14px;
+
+	align-items: center;
+	justify-content: center;
+	&__picture {
+		position: absolute;
+		left: 0;
+	}
+}
+.Skill-button-background_Sprint {
+	width: 146px;
+
+	color: var(--primaty-pink-dark, #945069);
+	background: var(--primaty-pink-light, #f2d4dc);
+	&:hover {
+		color: #975b71;
+		background: #f7e2e8;
+	}
+}
+.Skill-button-background_Audio-call {
+	width: 178px;
+
+	color: var(--primaty-cyan-dark, #2b788b);
+	background: var(--primaty-cyan-light, #c3dce3);
+	&:hover {
+		color: var(--primaty-cyan-dark, #42808f);
+		background: var(--primaty-cyan-light, #cfe0e5);
+	}
+}
+
+.Setting-button {
+	display: flex;
+
+	width: 40px;
+	height: 40px;
+
+	border: none;
+	border-radius: 4px;
+	background: var(--primaty-cyan-dark, #2b788b);
+
+	align-items: center;
+	justify-content: center;
+	&:hover {
+		background: var(--primaty-cyan-dark, #4b8796);
+	}
+}
+
+.difficulty-navigation {
+	display: flex;
+
+	margin: 40px 0;
+
+	gap: 40px;
+	&__block {
+		display: flex;
+
+		padding-bottom: 14px;
+
+		justify-content: center;
+		gap: 12px;
+
+		span {
+			color: #757575;
+		}
+	}
+	.difficulty-navigation__mark {
+		box-sizing: content-box;
+		height: 17px;
+		padding: 4px 8px;
+
+		border-radius: 4px;
+		&_easy {
+			color: #639b6d;
+			background: rgba(99, 155, 109, 0.3);
+		}
+		&_medium {
+			color: #c4a24c;
+			background: rgba(196, 162, 76, 0.3);
+		}
+		&_hard {
+			color: #cb5b43;
+			background: rgba(203, 91, 67, 0.3);
+		}
+	}
+
+	&__block_selected {
+		border-bottom: #000 solid 2px;
+	}
+	&__block_selected,
+	&__block:hover {
+		span {
+			color: #000;
+		}
+		.difficulty-navigation__mark {
+			&_easy {
+				color: #f6f5f4;
+				background: #639b6d;
+			}
+			&_medium {
+				color: #f6f5f4;
+				background: rgb(239, 205, 32);
+			}
+			&_hard {
+				color: #f6f5f4;
+				background: rgb(235, 68, 22);
+			}
+		}
+	}
+}
+
+.textbook {
+	display: flex;
+	flex-direction: column;
+
+	gap: 40px;
+}
+.textbook-card {
+	display: flex;
+	display: flex;
+
+	height: 337px;
+
+	border-radius: 14px;
+	background: #fff;
+	box-shadow: 0 22.89813px 45.79626px -11.44906px rgba(52, 41, 39, 0.08);
+	&__image {
+		position: relative;
+	}
+	&__background {
+		width: 337px;
+		height: 337px;
+
+		border-top-left-radius: 14px;
+		border-bottom-left-radius: 14px;
+
+		object-fit: cover;
+	}
+	&__container {
+		display: flex;
+		flex-direction: column;
+
+		box-sizing: content-box;
+		width: 516px;
+		padding: 40px;
+
+		gap: 20px;
+	}
+	&__header {
+		display: flex;
+
+		justify-content: space-between;
+	}
+	&__word {
+		display: flex;
+
+		gap: 12px;
+		&_special {
+			color: #757575;
+		}
+	}
+	&__transcription-wrap {
+		display: flex;
+
+		gap: 10px;
+	}
+	&__transcription {
+		color: #000;
+	}
+	&__status {
+		padding: 4px 12px;
+
+		color: #fff;
+		border-radius: 4px;
+		&_compound {
+			background: var(--secondary-orange, #cb5b43);
+		}
+		&_learned {
+			background: var(--secondary-green, #639b6d);
+		}
+	}
+
+	&__description {
+		font-weight: 500;
+		&_special {
+			margin-bottom: 12px;
+			padding-bottom: 12px;
+
+			color: #000;
+			border-bottom: 1px #e0e0e0 solid;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+
+		gap: 20px;
+	}
+
+	&__button {
+		padding: 12px 20px;
+
+		color: #f6f5f4;
+		border: none;
+		border-radius: 100px;
+		&_learned {
+			background: var(--secondary-green, #639b6d);
+			&:hover {
+				color: #639b6d;
+				background: rgba(99, 155, 109, 0.3);
+			}
+		}
+		&_dictionary {
+			background: var(--secondary-orange, #cb5b43);
+			&:hover {
+				color: #cb5b43;
+				background: rgba(203, 91, 67, 0.3);
+			}
+		}
+		&_learned-selected {
+			color: #639b6d;
+			background: rgba(99, 155, 109, 0.3);
+		}
+		&_dictionary-selected {
+			color: #cb5b43;
+			background: rgba(203, 91, 67, 0.3);
+		}
+	}
+}
+
+.card-mark {
+	position: absolute;
+	top: 40px;
+	right: 0;
+
+	display: flex;
+	flex-direction: column;
+
+	padding: 8px;
+
+	border-radius: 8px 0 0 8px;
+	background: rgba(0, 0, 0, 0.7);
+
+	justify-content: center;
+	gap: 8px;
+	&__row {
+		display: flex;
+
+		align-items: center;
+		gap: 8px;
+		span {
+			color: #fff;
+		}
+	}
+}
+
+.audio-button {
+	width: 40px;
+	height: 40px;
+
+	border: none;
+	border-radius: 4px;
+	background: #f6f5f4;
+	background-image: url(../svg/textbook/play-icon.svg);
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+.page-navigation {
+	display: flex;
+
+	margin-top: 40px;
+
+	justify-content: center;
+	align-items: flex-end;
+	gap: 24px;
+	span {
+		letter-spacing: 0.72px;
+	}
+	&__button {
+		font-family: Montserrat;
+		font-size: 20px;
+		font-weight: 700;
+
+		width: 46px;
+		height: 46px;
+
+		letter-spacing: -0.8px;
+
+		color: var(--secondary-cyan, #5996a5);
+		border: 3px solid var(--secondary-cyan, #5996a5);
+		border-radius: 100px;
+		background-color: transparent;
+		&_selected,
+		&:hover {
+			color: #fff;
+			background-color: #5996a5;
+		}
+	}
+}
